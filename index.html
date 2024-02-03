@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosis Sharma | Portfolio</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/jpg" href="memoji_happy.png" />
+
+
+    <!-- links for tailwind css and daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.49.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- import Source Code Pro font from google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+</head>
+
+<body style="font-family: 'Source Code Pro', monospace;">
+    <main class="container mx-auto px-5 relative top-20 md:px-24">
+        <!-- menu top -->
+        <section class="fixed top-5 right-5 md:top-20 md:right-20 z-10">
+            <ul class="menu menu-horizontal bg-base-200 p-1 rounded-box">
+                <li>
+                    <label class="swap swap-rotate">
+                        <input type="checkbox" onclick="changeTheme()" />
+                        <!-- sun icon -->
+                        <svg class="swap-on fill-current w-8 h-8 md:w-10 md:h-10" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
+                        </svg>
+                        <!-- moon icon -->
+                        <svg class="swap-off fill-current w-8 h-8 md:w-10 md:h-10" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
+                        </svg>
+                    </label>
+                </li>
+                <li>
+                    <a href="https://github.com/rosissharma" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                            class="w-8 h-8 md:w-10 md:h-10 fill-current">
+                            <path
+                                d="M256,32C132.3,32,32,134.9,32,261.7c0,101.5,64.2,187.5,153.2,217.9a17.56,17.56,0,0,0,3.8.4c8.3,0,11.5-6.1,11.5-11.4,0-5.5-.2-19.9-.3-39.1a102.4,102.4,0,0,1-22.6,2.7c-43.1,0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1,1.4-14.1h.1c22.5,2,34.3,23.8,34.3,23.8,11.2,19.6,26.2,25.1,39.6,25.1a63,63,0,0,0,25.6-6c2-14.8,7.8-24.9,14.2-30.7-49.7-5.8-102-25.5-102-113.5,0-25.1,8.7-45.6,23-61.6-2.3-5.8-10-29.2,2.2-60.8a18.64,18.64,0,0,1,5-.5c8.1,0,26.4,3.1,56.6,24.1a208.21,208.21,0,0,1,112.2,0c30.2-21,48.5-24.1,56.6-24.1a18.64,18.64,0,0,1,5,.5c12.2,31.6,4.5,55,2.2,60.8,14.3,16.1,23,36.6,23,61.6,0,88.2-52.4,107.6-102.3,113.3,8,7.1,15.2,21.1,15.2,42.5,0,30.7-.3,55.5-.3,63,0,5.4,3.1,11.5,11.4,11.5a19.35,19.35,0,0,0,4-.4C415.9,449.2,480,363.1,480,261.7,480,134.9,379.7,32,256,32Z">
+                            </path>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- about -->
+        <header id="about">
+            <h3 class="text-2xl md:text-3xl">Hello 👋,<br>my name is Rosis Sharma.</h3>
+            <br>
+            <section class="xl:w-6/12">
+                <p>
+                    I'm a full-stack web developer with a passion for creating innovative, user-friendly websites that
+                    offer an exceptional user experience. I have extensive experience in HTML, CSS, and JavaScript
+                    with some of its frameworks, and I'm always striving to stay up-to-date with the latest
+                    technologies.
+                </p>
+                <br>
+                <p>
+                    I have a track record of delivering projects on time, and I take immense pride in seeing my work
+                    come to life in a website that works for both users and businesses alike. I'm an advocate for clean,
+                    organized, and well-structured code, and I'm always able to find solutions to any technical
+                    problems.
+                </p>
+                <br>
+                <p>
+                    I'm a highly motivated individual, and I'm always looking for ways to challenge myself and learn new
+                    skills. I'm a team player and thrive in collaborative environments, and I'm always looking for ways
+                    to contribute to the success of the team. By combining my technical knowledge and problem-solving
+                    abilities, I'm able to create unique and powerful solutions for any project.
+                </p>
+            </section>
+        </header>
+
+        <!-- projects -->
+        <section class="mt-10" id="projects">
+            <h3 class="text-xl">Selected Works</h3>
+            <br>
+            <!-- list of projects -->
+            <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 xl:grid-cols-3 xl:gap-x-4 xl:gap-y-20">
+                <!-- chat app -->
+                <div class="card w-full 2xl:w-96 shadow-xl bg-primary text-primary-content">
+                    <div class="card-body">
+                        <h2 class="card-title">Chat App</h2>
+                        <p>A real-time chat app that utilizes Google Authentication to allow users to easily sign in and
+                            connect with others. Built with React, Firebase, and TailwindCSS.</p>
+                        <div class="card-actions justify-end mt-1 md:mt-4">
+                            <a href="https://rfchat-app.web.app" target="_blank"><button class="btn btn-secondary">Live
+                                    Demo</button></a>
+                            <a href="https://github.com/rosissharma/rfchat-app" target="_blank"><button
+                                    class="btn btn-secondary">GitHub Repo</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- subreddit -->
+                <div class="card w-full 2xl:w-96 shadow-xl bg-primary text-primary-content">
+                    <div class="card-body">
+                        <h2 class="card-title">Subreddit</h2>
+                        <p>A web application that utilizes the Reddit API to display a list of articles from a specific
+                            subreddit.</p>
+                        <div class="card-actions justify-end mt-1 md:mt-4">
+                            <a href="https://subreddit.rosissharma.com" target="_blank"><button
+                                    class="btn btn-secondary">Live Demo</button></a>
+                            <a href="https://github.com/rosissharma/subreddit" target="_blank"><button
+                                    class="btn btn-secondary">GitHub Repo</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- movie articles api -->
+                <div class="card w-full 2xl:w-96 shadow-xl bg-primary text-primary-content">
+                    <div class="card-body">
+                        <h2 class="card-title">Media Articles API<span class="tooltip"
+                                data-tip="Might require few refreshes">*</span>
+                        </h2>
+                        <p>Using Axios and Cheerio npm packages, the app pulls information from various news outlets and
+                            returns a json.
+                        </p>
+                        <div class="card-actions justify-end mt-1 md:mt-4">
+                            <a href="https://moviearticles.vercel.app/articles" target="_blank"><button
+                                    class="btn btn-secondary">Live Demo</button></a>
+                            <a href="https://github.com/rosissharma/movie-articles-api" target="_blank"><button
+                                    class="btn btn-secondary">GitHub Repo</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- calculator -->
+                <div class="card w-full 2xl:w-96 shadow-xl bg-primary text-primary-content">
+                    <div class="card-body">
+                        <h2 class="card-title">Calculator PWA</h2>
+                        <p>The PWA feature allows it to be accessible offline and installed on the user's device.
+                            This app is designed to be fast, reliable, and easy to use with a minimalistic design.</p>
+                        <div class="card-actions justify-end mt-1 md:mt-4">
+                            <a href="https://calculator.rosissharma.com" target="_blank"><button
+                                    class="btn btn-secondary">Live Demo</button></a>
+                            <a href="https://github.com/rosissharma/JS-Calculator" target="_blank"><button
+                                    class="btn btn-secondary">GitHub Repo</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- todo app -->
+                <div class="card w-full 2xl:w-96 shadow-xl bg-primary text-primary-content">
+                    <div class="card-body">
+                        <h2 class="card-title">My Tasks</h2>
+                        <p>A user-friendly app that allows users to easily manage their tasks and stay
+                            organized. With its clean and minimalistic design, adding and checking off tasks is a
+                            breeze.</p>
+                        <div class="card-actions justify-end mt-1 md:mt-4">
+                            <a href="https://task.rosissharma.com" target="_blank"><button
+                                    class="btn btn-secondary">Live Demo</button></a>
+                            <a href="https://github.com/rosissharma/Vanilla-JS-Todo" target="_blank"><button
+                                    class="btn btn-secondary">GitHub Repo</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- url shortner -->
+                <div class="card w-full 2xl:w-96 shadow-xl bg-primary text-primary-content">
+                    <div class="card-body">
+                        <h2 class="card-title">URL Shortner</h2>
+                        <p>A web application that allows users to easily shorten long URLs. Utilizing an API, the app
+                            provides a simple and intuitive way to create shorter, more
+                            manageable links. </p>
+                        <div class="card-actions justify-end mt-1 md:mt-4">
+                            <a href="https://shorturl.rosissharma.com" target="_blank"><button
+                                    class="btn btn-secondary">Live Demo</button></a>
+                            <a href="https://github.com/rosissharma/shortenURL" target="_blank"><button
+                                    class="btn btn-secondary">GitHub Repo</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function changeTheme() {
+            const html = document.querySelector('html');
+            let currentTheme = html.getAttribute('data-theme');
+
+            if (currentTheme == "cupcake") {
+                html.setAttribute('data-theme', 'forest');
+            } else {
+                html.setAttribute('data-theme', 'cupcake');
+            }
+        }
+
+    </script>
+</body>
+
+</html>
