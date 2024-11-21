@@ -73,9 +73,8 @@ export default function RootLayout({
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="system"
           enableSystem
-          disableTransitionOnChange
         >
           <main className="mx-auto w-full mb-16 max-w-screen-sm overflow-hidden py-8">
             {children}

@@ -13,7 +13,7 @@ export function Project({ href, title, description }: ProjectProps) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="group relative flex cursor-pointer flex-row items-center justify-between rounded-md duration-300 hover:before:absolute hover:before:-inset-2.5 hover:before:rounded-md hover:before:bg-accent/20 hover:before:content-['']"
+      className="group relative flex cursor-pointer flex-row items-center justify-between rounded-md duration-300 hover:before:absolute hover:before:-inset-2.5 hover:before:rounded-md hover:before:bg-accent/80 hover:dark:before:bg-accent/20 hover:before:content-['']"
     >
       <div className="flex flex-col space-y-1 z-10">
         <div className="flex items-center space-x-2">

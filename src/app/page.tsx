@@ -16,7 +16,7 @@ export default function Home() {
       {/* Name */}
       <header className="top-0 z-50 w-full animate-slide-from-down-and-fade-1 cursor-context-menu flex gap-x-4 items-center">
         <div className="h-12 w-12 rounded-full">
-          <Image src="/memoji.png" width={48} height={48} alt="avatar" className="rounded-full bg-white p-1" />
+          <Image src="/memoji.png" width={48} height={48} alt="avatar" className="rounded-full bg-black dark:bg-white p-1" />
         </div>
         <div className="flex flex-col">
           <h1 className="inline-flex text-xl font-medium no-underline">
